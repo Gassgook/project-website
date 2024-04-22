@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        th,td {
+            padding: 8px;
+            border-bottom: 1px solid red;
+        }
+        img {
+            filter: drop-shadow(20);
+            max-resolution: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h2 align="center">Form Pendaftaran</h2>
+    <table>
+        <form method="post" action="proses.php">
+            <tr>
+                <td><img src="imam2.jpg" alt="Foto" width="300" style="border-radius: 50%; object-fit: cover;" ></td>
+            </tr>
+        <tr> 
+            <td>Nama</td>
+            <td width="200"><input type="text" name="Nama" size="10"></td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin</color></td>
+            <td><select name="jk" size="1">
+                <option value="Laki-Laki">Laki-Laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Agama</td>
+            <td>
+                <input type="radio" name="Agama" value="Islam">Islam</option><br>
+                <input type="radio" name="Agama" value="Katolik">Katolik</option><br>
+                <input type="radio" name="Agama" value="Protestan">Protestan</option><br>
+                <input type="radio" name="Agama" value="Hindu">Hindu</option><br>
+                <input type="radio" name="Agama" value="Budha">Budha</option><br>
+                <input type="radio" name="Agama" value="China">China</option>
+            </td>
+        </tr>
+        <tr>
+            <td>Hobby</td>
+            <td><input type="checkbox" name="hobby" value="Browsing">Browsing<br/>
+                <input type="checkbox" name="hobby" value="Bersepeda">Bersepeda<br/>
+                <input type="checkbox" name="hobby" value="Memancing">Memancing
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td><textarea name="alamat" cols="20" rows="5"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Kirim"/></td>
+            <td><input type="reset" value="Batal"/></td>
+        </tr>
+        </form>
+    </table>
+    
+</body>
+</html>

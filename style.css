@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+
+.navigasi {
+    background-color: #3b4997;
+    width: 100%;
+    height: 75px;
+    color: white;
+    position: fixed;
+}
+
+.logo {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.menu {
+    margin-left: 800px;
+    padding-top: 26px;
+}
+
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover {
+    color: aqua;
+    font-style: italic;
+}
+
+.benner {
+    background-color: #3b5999;
+    height: 800px;
+    text-align: center;
+    color: white;
+}
+
+.benner img {
+    border-radius: 100px;
+    height: 150px;
+    border: 6px solid white;
+    margin-top: 100px;
+}
+
+.benner h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.benner button {
+    margin-top: 60px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+}
+
+.benner button:hover {
+    background-color: #3b5999;
+    border: 1px solid white;
+    color: white;
+}
+
+h1 span:before{
+    content: '';
+    animation: gerak infinite 8s ease;
+    transform: translateY(-50%);
+    color: aqua;
+    font-size: 50px;
+}
+
+
+.box-profile {
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 30px;
+    align-content: center;
+}
+
+.box-kiri, .box-kanan {
+    width: 200px;
+    height: 300px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px 80px;
+    padding-top: 100px;
+    padding-right: 240px;
+    margin: 70px 20px 20px 55px;
+    border-radius: 10px;
+    float: left;
+}
+
+
+
+.box-kiri:Hover, .box-kanan:Hover {
+     background-color: #3b5999;
+     color: white;
+}
+
+.box-profile h3, p{
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding: 0px 20px;
+}
+
+
+
+
+@keyframes gerak{
+    0%{
+        content: 'Selamat Datang';
+    }
+    25%{
+        content: 'Saya Diki Irawan'
+    }
+    50%{
+        content: 'Saya Imam Bagus Pramana';
+    }
+    75%{
+        content: 'Semoga Kalian Suka';
+    }
+    100%{
+        content: 'TerimaKasih Sudah Singgah!';
+}

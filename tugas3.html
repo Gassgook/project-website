@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            background-color: rgb(25,66,104);
+            padding-top: 60px;
+            padding-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
+        }
+        .judul {
+            color: aliceblue;
+            margin-left: 100px;
+            margin-top: 20px;
+            font-size: 35px;
+        }
+        .little {
+            color: aliceblue;
+            margin-left: 100px;
+            margin-top: 10px;
+            font-size: 15px;
+            width: 100px;
+            background-color: rgb(13,202,240);
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            box-sizing: border-box;
+            padding-bottom: 4.2px;
+            padding-left: 7.8px;
+            padding-right: 7.8px;
+            padding-top: 4.2px;
+        }
+        .text1 {
+            color: aliceblue;
+            background-color: rgb(191,229,238);
+            display: block;
+            font-size: 18px;
+            margin-left: 100px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        .text {
+            color: rgb(92, 228, 255);
+            text-decoration: solid;
+            background-color: rgb(191,229,238);
+            box-sizing: border-box;
+            margin: 16px 100px 8px;
+            height: 50px;
+            width: 1300px;
+            margin-bottom: 16px;
+            padding-bottom: 16px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 16;
+            border-radius: 20px;
+        }
+        input {
+            padding: 8px 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="header">
+        <h1 class="judul">Formulir Pendaftaran <br>
+            STMIK KAPUTAMA T.A 2024/2025</h1>
+        <h2 class="little">Gelombang 1</h2>
+        <p class="text1">Pastikan kembali data yang anda isi sudah benar semua & lengkap sebelum melanjutkan.</p>
+        <p class="text2"><b>Perhatian!</b>field yang bertanda * berarti wajib disini.</p>        
+    </ul>
+    <h2>Data Diri</h2>
+    <table>
+        <form method="post" action="proses.php">
+        <tr>
+            <td>NIK </td>
+            <td>Nama Lengkap</td>
+        </tr>
+        <tr>  
+            <td>
+                <input id="ad" type="text" name="NIK" size="80">
+            </td> 
+            <td>
+                <input id="ad" type="text" name="Nama Lengkap" size="60">
+            </td>
+        </tr>
+
+        <tr>
+           <td>Tempat/Tanggal Lahir
+            <input id="ad" type="text" size="55">
+           </td>
+           <td>
+            <input id="ad" type="date" name="Tanggal" size="60"/>
+           </td>
+        
+        </tr>
+
+        <tr>
+            <td>Jenis Kelamin
+                <input type="radio" name="JK" value="L">Laki-Laki</option>
+                <input type="radio" name="JK" value="P">Perempuan</option>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Status
+            <input type="radio" name="Status" value="Menikah">Menikah</option>
+            <input type="radio" name="Status" value="Belum Menikah">Belum Menikah</option>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Agama
+                <input type="radio" name="Agama" value="Islam">Islam</option>
+                <input type="radio" name="Agama" value="Katolik">Katolik</option>
+                <input type="radio" name="Agama" value="Protestan">Protestan</option>
+                <input type="radio" name="Agama" value="Hindu">Hindu</option>
+                <input type="radio" name="Agama" value="Budha">Budha</option>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Alat Tranportasi
+                <select name="Alat Transportasi" size="1">
+                <option value="Jalan Kaki">Jalan Kaki</option>
+                <option value="Angkutan umum/bus/pete-pete">Angkutan umum/bus/pete-pete</option>
+                <option value="Mobil/bus antar jemput">Mobil/bus antar jemput</option>
+                <option value="Kreta api">Kreta api</option>
+                <option value="Ojek">Ojek</option>
+                <option value="Sepeda Motor">Sepeda Motor</option>
+                <option value="Lainnya">Lainnya</option>
+            </select></td>
+            <td>Jenis Tinggal
+                <select name="Jenis Tinggal" size="1">
+                <option value="Bersama Orang Tua">Bersama Orang Tua</option>
+                <option value="Wali">Wali</option>
+                <option value="Kost">Kost</option>
+                <option value="Lainnya">Lainnya</option>
+            </select></td>
+        </tr>
+
+        <tr>
+            <td>Penerima KPS<select name="Penerima KPS" size="1">
+                <option value="Tidak">Tidak</option>
+                <option value="Ya">Ya</option>
+            </select></td>
+            <td>Kewarganegaraan
+                <select name="Kewarganegaraan" size="1">
+                    <option value="WNI">WNI</option>
+                    <option value="WNA">WNA</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Alamat Lengkap(Sesuai KTP)</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" size="100">
+            </td>
+        </tr>
+        <tr>
+            <td>RT/RW</td>
+            <td>Jalan</td>
+        </tr>
+        <tr>
+            <td width="200">
+                 <input type="text" size="25">
+                <input type="text" size="25">
+            </td>
+            <td>
+                <input type="text" size="60">
+            </td>
+        </tr>
+        <tr>
+            <td>Kode pos</td>
+            <td>Kel/Desa</td>
+        </tr>
+            <td>
+                <input type="text" size="55">
+            </td>
+            <td>
+                <input type="text" size="60">
+            </td>
+        </tr>
+        <tr>
+            <td>Dusun</td>
+            <td>Kecamatan</td>
+        <tr>
+            <td>
+                <input type="text" size="60">
+            </td>
+            <td>
+                <input type="text" size="60">
+            </td>           
+        </tr>    
+        <tr>
+            <td>NPWP</td>
+            <td>Telp/HP</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" size="60">
+            </td>
+            <td>
+                <input type="text" size="60">
+            </td>
+        </tr>   
+        <tr>
+            <td>Email</td>
+        </tr> 
+        <tr>
+            <td>
+                <input type="text" size="60">
+            </td>
+        </tr>
+        <tr>
+
+            <td>Asal Sekolah</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" size="60">
+            </td>
+        </tr>
+        <tr>
+            <td>NISN</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" size="60">
+            </td>
+        </tr>
+        <tr>
+            <td>Jurusan</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" size="60">
+            </td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" size="60">
+            </td>
+        </tr>
+        <tr>
+            <td>Program Studi</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="Program Studi" value="Teknik Informatika (S1)">Teknik Informatika (S1)</option>
+                <input type="radio" name="Program Studi" value="Sistem Informasi (S1)">Sistem Informasi (S1)</option>
+                <input type="radio" name="Program Studi" value="Manajemen Informatika (D3)">Manajemen Informatika (D3)</option>
+            </td>
+            <tr>
+                <td>
+                    <input type="radio" name="Program Studi" value="Komputerisasi Akuntansi (D3)">Komputerisasi Akuntansi (D3)</option>
+                </td>
+            </tr>
+        </tr>
+        <tr>
+            <td>Waktu Belajar</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="waktu belajar" value="Pagi">Pagi</option>
+                <input type="radio" name="waktu belajar" value="Sore">Sore</option>
+            </td>
+        </tr>
+        <tr>
+            <td>Pilihan Kelas</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" name="Pilihan Kelas" value="Reguler">Reguler</option>
+                <input type="radio" name="Pilihan Kelas" value="Karyawan">Karyawan</option>
+                <input type="radio" name="Pilihan Kelas" value="Kip Kuliah">Kip Kuliah</option>
+            </td>
+        </tr>
+
+    </form>
+    </table>
+    
+</body>
+</html>
