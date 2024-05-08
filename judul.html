@@ -17,9 +17,33 @@
             font-size: 40px;
             font-family: "Jersey 10", sans-serif;
         }
+        h1 span:before{
+            content: '';
+            animation: gerak infinite 10s ease;
+            transform: translateY(-50%);
+            color: rgb(white, green, white);
+            font-size: 50px;
+        }
+        @keyframes gerak{
+    0%{
+        content: 'Selamat Datang';
+    }
+    25%{
+        content: 'Saya Imam Bagus Pramana'
+    }
+    50%{
+        content: 'Saya Diki Irawan';
+    }
+    75%{
+        content: 'Terima Kasih Sudah Singgah! ';
+    }
+    100%{
+        content: 'Semoga Kalian Suka';
+    }
+        }
     </style>
 </head>
 <body>
-    <h1>Website IDIK</h1>
+    <h1>Hai...<span></span></h1>
 </body>
 </html>
