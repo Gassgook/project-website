@@ -9,7 +9,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Jersey+25+Charted&family=Orbitron:wght@400..900&display=swap');
         body {
           font-family: "Jersey 10", sans-serif;
-          background-image: url(Angkasa.jpg);
+          background-image: url(space-7283103_1280.jpg);
           height: 50%;
           background-position: center;
           background-repeat: no-repeat;
@@ -18,11 +18,6 @@
           padding: 20px;
           max-width: 800px;
           margin: auto;
-        }
-        img {
-          border: 2px solid white;
-          border-radius: 100px;
-          border-style: outset;
         }
         button {
           border: 1 solid whitesmoke;
@@ -44,16 +39,18 @@
           text-transform: uppercase;
         }
         .biodata {
-          background-image: url(angkasa2.jpeg);
+          background-image: url(space-7283103_1280.jpg);
           height: 100%;
+          margin-bottom: 10px;
+          object-fit: cover;
+          text-decoration: none;
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
-          border: 2px solid #ccc;
-          border-style: outset;
+          border: 5px solid #ccc;
+          border-style: calc(30px 20px);
           padding: 20px;
           border-radius: 8px;
-          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         .biodata h1 {
           color: seashell;
@@ -65,13 +62,64 @@
         marquee {
           font-size: 35px;
         }
+
+        .flip-card {
+          background-color: transparent;
+          width: 300px;
+          height: 300px;
+          perspective: 1000px;
+        }
+
+        .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+          transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+          background-color: #bbb;
+          color: black;
+        }
+
+        .flip-card-back {
+          background: linear-gradient(Purple, white);
+          color: white;
+          transform: rotateY(180deg);
+        }
       </style>
       
 </head>
 <body>
     <div class="biodata">
         <marquee behavior="alternate">Biodata Imam:</marquee>
-        <img src="Bagus2.jpeg" width="100" height="100">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="Bagus2.jpeg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Imam Bagus Pramana</h1> 
+              <p>Bersepeda</p> 
+              <p>I like anime</p>
+            </div>
+          </div>
+        </div>
         <p><strong>Nama:</strong> Imam Bagus Pramana</p>
         <p><strong>Tempat, Tanggal Lahir:</strong> Tambunan A, 21 Agustus 2005</p>
         <p><strong>Alamat:</strong> Jl.Pantai Biru, Kec.Salapian,Tambunan A</p>
@@ -84,7 +132,18 @@
 
     <div class="biodata">
         <marquee behavior="alternate">Biodata Diki:</marquee>
-        <img src="Diki.jpg" width="100" height="100">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="Diki.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Diki Irawan</h1> 
+              <p>Futsal</p> 
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
         <p><strong>Nama:</strong> Diki Irawan Simbolon</p>
         <p><strong>Tempat, Tanggal Lahir:</strong> Binjai, 10 Desember 2004</p>
         <p><strong>Alamat:</strong> Jl.Suka Damai,Binjai Barat,Binjai</p>

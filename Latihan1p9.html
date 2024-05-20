@@ -1,0 +1,20 @@
+<script>
+    function convertGrade() {
+        let score = document.getElementById('score').value;
+        let grade = '';
+        if (score >= 80 && score <= 100) {
+            grade = 'A';
+        } else if (score >= 70 && score <= 79) {
+            grade = 'B';
+        } else {
+            grade = 'Nilai di luar rentang yang ditentukan';
+        }
+        document.getElementById('gradeResult').value = grade;
+    }
+</script>
+<div>
+    <input type="number" id="score" placeholder="Masukkan nilai">
+    <button onclick="convertGrade()">Konversi Nilai</button>
+    <input type="text" id="gradeResult" readonly>
+</div>
+

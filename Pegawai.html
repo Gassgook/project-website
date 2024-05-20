@@ -1,0 +1,30 @@
+<body>
+    <script type="text/javascript">
+  function cekKelayakanPegawai(jenisKelamin, tinggiBadan, beratBadan, ipk, pendidikan) {
+    const beratIdeal = tinggiBadan - 110;
+    const pendidikanValid = ['D3', 'S1'];
+
+    if (jenisKelamin === 'laki-laki') {
+      return (
+        tinggiBadan >= 170 && tinggiBadan <= 179 &&
+        beratBadan === beratIdeal &&
+        ipk >= 3 && ipk <= 4 &&
+        pendidikanValid.includes(pendidikan)
+      );
+    } else if (jenisKelamin === 'perempuan') {
+      return (
+        tinggiBadan >= 160 && tinggiBadan <= 170 &&
+        beratBadan === beratIdeal &&
+        ipk >= 3 && ipk <= 4 &&
+        pendidikanValid.includes(pendidikan)
+      );
+    } else {
+      return false;
+    }
+  }
+
+  // Contoh penggunaan fungsi
+  document.write(cekKelayakanPegawai('laki-laki', 175, 65, 3.5, 'S1')); // Output: true atau false tergantung kelayakan
+  document.write(cekKelayakanPegawai('perempuan', 165, 55, 3.2, 'D3')); // Output: true atau false tergantung kelayakan
+    </script>
+</body>
