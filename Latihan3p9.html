@@ -6,26 +6,26 @@
     const bonusUangMakanPerHari = 5000;
     let totalBonusUangMakan = 0;
 
-    // Menghitung gaji lembur
+
     if (jumlahJamLembur > 0 && jumlahJamLembur <= 2) {
         gajiLembur = jumlahJamLembur * 25000;
     } else if (jumlahJamLembur >= 3) {
         gajiLembur = jumlahJamLembur * 35000;
     }
 
-    // Menghitung bonus uang makan
+ 
     if (jumlahHari * 8 + jumlahJamLembur >= 20) {
         totalBonusUangMakan = jumlahHari * bonusUangMakanPerHari;
     }
 
-    // Menghitung total gaji
+
     const totalGaji = (jumlahHari * gajiPerHari) + gajiLembur + totalBonusUangMakan;
 
     return totalGaji;
 }
 
-// Contoh penggunaan fungsi
-const totalGaji = hitungGaji(5, 3); // 5 hari kerja, 3 jam lembur
+
+const totalGaji = hitungGaji(5, 3); 
 document.write(`Total gaji yang diterima: Rp${totalGaji}`);
 
     </script>

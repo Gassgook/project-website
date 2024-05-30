@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    function tambah()
+    {
+        var nilaia,nilaib,nilaitambah;
+        nilaia=document.nilai.na.value;
+        nilaib=document.nilai.nb.value;
+        nilaia=parseInt(nilaia);
+        nilaib=parseInt(nilaib);
+        nilaitambah=nilai.hasiltambah.value=nilaitambah;
+    }
+    function kurang()
+    {
+        var nilaia,nilaib,nilaikurang;
+        nilaia=document.nilai.na.value;
+        nilaib=document.nilai.nb.value;
+        nilaia=perseInt(nilaia);
+        nilaib=parseInt(nilaib);
+        nilaikurang=nilaia-nilaib;
+        document.nilai.hasilkurang.value=nilaikurang;
+    }
+</script>
+<body>
+    <form name="nilai">
+        <table align="center">
+            <tr><td>Nilai a</td><td><input type="text" name="na" /></td></tr>
+            <tr><td>Nilai b</td><td><input type="text" name="nb" /></td></tr>
+            <tr><td><input type="button" value="+" onclick="tambah()" /></td>
+                <td><input type="button" value="-" onclick="kurang()" /></td></tr>
+            <tr><td> Hasil Penjumlahan</td><td><input type="text" name="hasiltambah" /></td></tr>
+            <tr><td> Hasil Pengurangan</td><td><input type="text" name="hasilkurang" /></td></tr>
+    </form>
+</body>
+</html>

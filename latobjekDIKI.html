@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    var sekarang=new Date();
+    hari=sekarang.getDay();
+    if(hari==1)
+            namahari="senin";
+        else if(hari == 2)
+            namahari="selasa";
+        else if(hari == 3)
+            namahari="rabu";
+        else if(harin == 4)
+            namahari="Kamis";
+        else if(hari == 5)
+            namahari="jum'at";
+        else if(hari == 6)
+            namahari="sabtu";
+        else if(hari == 7)
+            namahari="Minggu";
+    tgl=sekarang.getDate();
+    bln=sekarang.getMonth();
+    thn=sekarang.getFullYear();
+    document.write("Sekarang adalah" +namahari+",tanggal:"+tgl+",bulan:"+bln+",Tahun:"+thn);
+</script>
+<body>
+    
+</body>
+</html>

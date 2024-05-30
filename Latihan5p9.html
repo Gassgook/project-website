@@ -7,14 +7,22 @@
     <script>
         function hitungBilling() {
             const jumlahDetik = parseInt(document.getElementById('jumlahDetik').value);
-            const pulsaPer45Detik = 30; // 1 pulsa = 30 rupiah = 45 detik
+            const pulsaPer45Detik = 30;
 
             const jumlahPulsa = Math.ceil(jumlahDetik / 45);
             const totalBiaya = jumlahPulsa * pulsaPer45Detik;
+            const jumlahJam  = Math.ceil(jumlahDetik / 3600);
+            const jumlahMenit = Math.ceil(jumlahDetik / 60); 
 
-            document.getElementById('hasil').textContent = 
-                `Jumlah Detik Pemakaian: ${jumlahDetik}\n` +
-                `Jumlah Pulsa: ${jumlahPulsa}\n` +
+            document.getElementById('hasil1').value = 
+                `Jumlah Jam: ${jumlahJam}`;
+            document.getElementById('hasil2').value =
+                `Jumlah Menit: ${jumlahMenit}`;
+            document.getElementById('hasil3').value =
+                `Jumlah Detik Pemakaian: ${jumlahDetik}`;
+            document.getElementById('hasil4').value =
+                `Jumlah Pulsa: ${jumlahPulsa}`;
+            document.getElementById('hasil5').value =
                 `Total Biaya: Rp${totalBiaya}`;
         }
     </script>
@@ -25,8 +33,13 @@
         <label for="jumlahDetik">Jumlah Detik Pemakaian:</label>
         <input type="number" id="jumlahDetik" name="jumlahDetik" required><br><br>
         
-        <button type="submit">Hitung Biaya</button>
+        <button type="submit">Hitung Biaya</button><br>
+        <input type="text" id="hasil1" readonly><br>
+        <input type="text" id="hasil2" readonly><br>
+        <input type="text" id="hasil3" readonly><br>
+        <input type="text" id="hasil4" readonly><br>
+        <input type="text" id="hasil5" readonly>
+        
     </form>
-    <pre id="hasil"></pre>
 </body>
 </html>

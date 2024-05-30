@@ -126,11 +126,17 @@
             }
 
             document.getElementById('hasil').textContent =
-                    `Karier: ${karier}\n` +
-                    `Kesehatan: ${kesehatan}\n` +
-                    `Asmara: ${asmara}\n` +
-                    `Keuangan: ${keuangan}\n`+
-                    `Zodiak: ${zodiak}`;
+                `Zodiak: ${zodiak}\n` +
+                `Kesehatan: ${kesehatan}\n` +
+                `Asmara: ${asmara}\n` +
+                `Keuangan: ${keuangan}\n` +
+                `Karier: ${karier}`;
+            document.getElementById('hasilInput1').value = zodiak             
+            document.getElementById('hasilInput2').value = kesehatan
+            document.getElementById('hasilInput3').value = asmara
+            document.getElementById('hasilInput4').value = keuangan
+            document.getElementById('hasilInput5').value = karier
+                         
         }
     </script>
 </head>
@@ -146,5 +152,15 @@
         <button type="submit">Cek Zodiak</button>
     </form>
     <pre id="hasil"></pre>
+    Zodiak <br>
+    <input id="hasilInput1"/><br>
+    Kesehatan <br>
+    <input id="hasilInput2"/><br>
+    asmara <br>
+    <input id="hasilInput3"/><br>
+    keuangan <br>
+    <input id="hasilInput4"/><br>
+    karier <br>
+    <input id="hasilInput5"/><br>
 </body>
 </html>

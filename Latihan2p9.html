@@ -3,7 +3,7 @@
 function hitungTotalBayar(nama, harga, jumlah) {
     let diskon = 0;
     if (jumlah >= 3) {
-        diskon = 0.1 * harga * jumlah; // 10% dari total harga sebelum diskon
+        diskon = 0.1 * harga * jumlah; 
     }
     let totalBayar = (harga * jumlah) - diskon;
     return {
@@ -15,7 +15,7 @@ function hitungTotalBayar(nama, harga, jumlah) {
     };
 }
 
-// Contoh penggunaan fungsi
+
 let hasil = hitungTotalBayar("Pensil", 2000, 3);
 document.write(`Nama Barang: ${hasil.nama}`);
 document.write(`Harga Satuan: ${hasil.harga}`);

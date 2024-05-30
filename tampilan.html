@@ -5,24 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-image: url(space-7283103_1280.jpg);
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+        body {
+          background-image: url(layered-waves-haikei.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
         }
-        img{
-            border-radius: 50px;
+        .profile-container {
+            size: 500%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 110vh;
+            background-color: #001220;
             object-fit: cover;
-            border-style: calc(10px 15px);
         }
-    </style>
-
+        .profile-card {
+            width: 300px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            background: linear-gradient(hsl(335, 70%, 46%),hsl(4, 94%, 69%));
+            border-radius: 10px;
+            animation: slideIn 0.5s ease-out forwards;
+        }
+        h1,p {
+          color: white;
+        }
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-link {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+        }
+        @keyframes slideIn {
+          from {
+            transform: translateY(-20px);
+            opacity: 0;
+          }
+          to {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+      </style>
 </head>
 <body>
-
-        <img src="imam2.jpg" width="400" height="500" style="object-fit: cover;" target="content">
-        <img src="diki2.jpg" width="400" height="500" style="padding-right: 4px; margin-right: 5px;" target="content">
+    <div class="profile-container">
+        <div class="profile-card">
+          <img src="bagus.jpeg" alt="Profile Image" class="profile-image">
+          <h1>Imam Bagus Pramana</h1>
+          <p class="title">23451030</p>
+          <p>Teknik Informatika</p>
+          <div class="social-links">
+            <a href="https://api.whatsapp.com/send/?phone=6282174770486&text&type=phone_number&app_absent=0" class="social-link" target="_blank">WhatsApp</a>
+            <a href="https://x.com/baguspr98280081" class="social-link" target="_blank">Twitter</a>
+            <a href="https://www.facebook.com/profile.php?id=100078987404627" class="social-link" target="_blank">Facebook</a>
+          </div>
+        </div>
+      </div>
+    
+      <div class="profile-container">
+        <div class="profile-card">
+          <img src="profile-image.jpg" alt="Profile Image" class="profile-image">
+          <h1>Diki Irawan Simbolon</h1>
+          <p class="title">23451097</p>
+          <p>Teknik Informatika</p>
+          <div class="social-links">
+            <a href="#" class="social-link">WhatsApp</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Facebook</a>
+          </div>
+        </div>
+      </div>
+          
 </body>
 </html>
